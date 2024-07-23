@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeLancers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        #nav .navbar {
+            background-color: #333;
+        }
+        #nav .navbar-brand,
+        #nav .nav-link {
+            color: #f1f1f1 !important;
+        }
+        #nav .nav-link:hover {
+            color: #ff4c4c !important;
+        }
+        .card {
+            position: relative;
+            margin: 20px;
+            width: 18rem;
+            display: inline-block;
+            background-color: #333;
+            color: #f1f1f1;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .card img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .card-body {
+            padding: 20px;
+            text-align: center;
+        }
+        .card-text {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        .card-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            background-color: #ff4c4c;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .card-button:hover {
+            background-color: #cc0000;
+        }
+        footer {
+            background-color: #333;
+            color: #f1f1f1;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div class="navbar navbar-expand-md">
+            <a href="https://htmlcodex.com/product-landing-page-template" class="navbar-brand">FreeBeez</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="freelancers.html" class="nav-link">Freelancers</a></li>
+                    <li class="nav-item"><a href="job.html" class="nav-link">Jobs</a></li>
+                    <li class="nav-item"><a href="topfree.html" class="nav-link">Top Freelancers</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link">FAQs</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <center>
+        <div class="card">
+            <img src="free1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="regfree.html" class="card-text"><button class="btn card-button">REGISTER AS FREELANCER</button></a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="free2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="showfree.php" class="card-text"><button class="btn card-button">SEARCH FREELANCERS</button></a>
+            </div>
+        </div>
+    </center>
+    <footer>
+        <p>Freebeez Pvt. Ltd. | Contact: freebeez@gmail.com | Karur, Tamil Nadu</p>
+    </footer>
+</body>
+</html>
